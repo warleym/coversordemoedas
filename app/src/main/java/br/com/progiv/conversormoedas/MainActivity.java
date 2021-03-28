@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         this.mViewHolder.editValue = findViewById(R.id.edit_value);
         this.mViewHolder.textDolar = findViewById(R.id.text_dolar);
         this.mViewHolder.textEuro = findViewById(R.id.text_euro);
+        this.mViewHolder.textBitcoin = findViewById(R.id.text_bitcoin);
         this.mViewHolder.ButtonCalculate = findViewById(R.id.button_calculate);
 
         this.mViewHolder.ButtonCalculate.setOnClickListener(this);
@@ -39,8 +40,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
             }else {
                 Double real = Double.valueOf(value);
-                this.mViewHolder.textDolar.setText(String.format("%.2f",(real / 4)));
-                this.mViewHolder.textEuro.setText(String.format("%.2f",(real / 5)));
+                this.mViewHolder.textDolar.setText(String.format("%.2f",(real / 5.76)));
+                this.mViewHolder.textEuro.setText(String.format("%.2f",(real / 6.81)));
+                this.mViewHolder.textBitcoin.setText(String.format("%.2f",(real / 323404.61)));
             }
         }
 
@@ -49,12 +51,14 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     private void clearValues() {
         this.mViewHolder.textDolar.setText("");
         this.mViewHolder.textEuro.setText("");
+        this.mViewHolder.textBitcoin.setText("");
     }
 
     private static class ViewHolder {
         EditText editValue;
         TextView textDolar;
         TextView textEuro;
+        TextView textBitcoin;
         Button ButtonCalculate;
     }
 

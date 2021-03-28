@@ -37,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/valor_em_dolar"
-
         android:textColor="@color/teal_200"
         android:textSize="18sp" />
 
@@ -53,7 +52,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="@string/valor_em_euro"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/valor_em_bitcoin" />
+
+    <TextView
+        android:id="@+id/text_bitcoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/valor_em_bitcoin"
         android:textColor="@color/teal_200"
         android:textSize="18sp" />
 
@@ -61,7 +74,7 @@
         android:id="@+id/button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="85dp"
+        android:layout_marginTop="40dp"
         android:background="#A7D381"
         android:text="@string/calcular"
         android:textColor="#F7FAF6"
