@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
             }else {
                 Double real = Double.valueOf(value);
-                this.mViewHolder.textDolar.setText(String.format("%.2f",(real / 5.76)));
-                this.mViewHolder.textEuro.setText(String.format("%.2f",(real / 6.81)));
-                this.mViewHolder.textBitcoin.setText(String.format("%.2f",(real / 323404.61)));
+                this.mViewHolder.textDolar.setText(String.format("US$ %.2f",(real / 5.76)));
+                this.mViewHolder.textEuro.setText(String.format("€ %.2f",(real / 6.81)));
+                this.mViewHolder.textBitcoin.setText(String.format("BTC %.2f",(real / 323404.61)));
             }
         }
 
